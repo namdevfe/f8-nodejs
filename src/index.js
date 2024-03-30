@@ -8,6 +8,10 @@ const port = 3000;
 // Config static file
 app.use(express.static(path.join(__dirname, "public")));
 
+// Apply middleware
+app.use(express.urlencoded());
+app.use(express.json());
+
 // HTTP logger
 app.use(morgan("combined"));
 
@@ -29,7 +33,8 @@ app.get("/search", (req, res) => {
 });
 
 app.post("/search", (req, res) => {
-  res.render("search");
+  console.log("🚀req.body---->", req.body);
+  res.send("");
 });
 
 app.listen(port, () => {
