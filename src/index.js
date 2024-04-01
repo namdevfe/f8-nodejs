@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // Config static file
-app.use(express.static(path.join(__dirname, 'public')));
+          app.use(express.static(path.join(__dirname, 'public')));
 
 // Apply middleware
 app.use(

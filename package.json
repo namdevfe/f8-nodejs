@@ -23,13 +23,13 @@
     "url": "https://github.com/nguyenkimquocnam-dev/f8-blog-nodejs/issues"
   },
   "homepage": "https://github.com/nguyenkimquocnam-dev/f8-blog-nodejs#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
   },
   "dependencies": {
     "express": "^4.19.2",
