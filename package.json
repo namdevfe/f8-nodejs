@@ -7,7 +7,8 @@
     "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,11 @@
     "url": "https://github.com/nguyenkimquocnam-dev/f8-blog-nodejs/issues"
   },
   "homepage": "https://github.com/nguyenkimquocnam-dev/f8-blog-nodejs#readme",
-  
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
-    },
+    }
+  },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
   },
@@ -35,7 +37,7 @@
     "express-handlebars": "^7.1.2"
   },
   "devDependencies": {
-    "husky": "^4.2.5",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
