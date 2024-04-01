@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "beautiful": "lint-staged",
-    "pre-commit": "lint-stage",
+    "pre-commit": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,7 +33,7 @@
     "express-handlebars": "^7.1.2"
   },
   "devDependencies": {
-    "husky": "^8.0.0",
+    "husky": "^4.2.5",
     "lint-staged": "^15.2.2",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
